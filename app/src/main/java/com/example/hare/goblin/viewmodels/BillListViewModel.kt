@@ -12,9 +12,24 @@ class BillListViewModel : ViewModel() {
     init {
         val billList = ArrayList<Bill>()
         bills.postValue(ArrayList<Bill>().apply {
-            add(Bill(1, "test1"))
-            add(Bill(2, "test2"))
-            add(Bill(3, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
+            add(Bill(1, 100.00F, "test1"))
+            add(Bill(2, 200.00F, "test2"))
+            add(Bill(3, 300.00F, "test3"))
         })
     }
 }
