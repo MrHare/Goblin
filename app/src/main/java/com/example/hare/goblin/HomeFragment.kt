@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import com.example.hare.goblin.databinding.FragmentHomeBinding
 import com.example.hare.goblin.viewmodels.BillListViewModel
 
@@ -21,6 +22,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        binding.fab.setOnClickListener{ view ->
+            Navigation.findNavController(view!!).navigate(R.id.action_homeFragment_to_billAddFragment)
+        }
 
         setupAdapter()
         return binding.root

@@ -37,7 +37,9 @@ class BillAdapter : ListAdapter<Bill, BillAdapter.ViewHolder>(BillDiffCallback()
 
         fun bind(bill : Bill) {
             binding.let {
-                it.itemModel = BillViewModel(bill)
+                it.viewModel = BillViewModel(
+                    itemView.context,
+                    bill)
                 it.executePendingBindings()
             }
         }

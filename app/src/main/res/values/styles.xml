@@ -7,11 +7,29 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <color name="black_60">#99000000</color>
+    <color name="black_45">#72000000</color>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="TextAppearance.Body4.Bold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_60</item>
+    </style>
+
+    <style name="TextAppearance.Body3" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10sp</item>
+        <item name="android:textColor">@color/black_45</item>
+    </style>
 
 </resources>
