@@ -3,7 +3,6 @@ package com.example.hare.goblin.viewmodels
 import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.databinding.ObservableField
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import com.example.hare.goblin.Bill
 import com.example.hare.goblin.R

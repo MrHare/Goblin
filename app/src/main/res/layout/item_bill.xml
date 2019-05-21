@@ -58,12 +58,14 @@
             app:layout_constraintLeft_toRightOf="@+id/type_icon"
             tools:text="100.00"/>
 
+
         <TextView
             android:id="@+id/info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{viewModel.info}"
             android:textAppearance="@style/TextAppearance.Body3"
+
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/cost"
