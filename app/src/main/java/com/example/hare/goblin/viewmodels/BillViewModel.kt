@@ -12,6 +12,8 @@ class BillViewModel(
     var bill : Bill
 ) : ViewModel(){
 
+    var isEditMode = ObservableField<Boolean>(false)
+
     var icon = ObservableField<Drawable>(
         context.resources.getDrawable(getIconId())
     )

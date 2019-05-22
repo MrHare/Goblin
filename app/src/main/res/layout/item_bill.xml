@@ -26,6 +26,7 @@
             android:layout_width="@dimen/bill_delete_icon_size"
             android:layout_height="@dimen/bill_delete_icon_size"
             android:src="@mipmap/ic_delete_round"
+            app:isVisible="@{viewModel.isEditMode}"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -34,6 +35,7 @@
             android:layout_width="@dimen/bill_edit_icon_size"
             android:layout_height="@dimen/bill_edit_icon_size"
             android:src="@mipmap/ic_edit_round"
+            app:isVisible="@{viewModel.isEditMode}"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
