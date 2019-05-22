@@ -1,11 +1,12 @@
 package com.example.hare.goblin.viewmodels
 
+import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.hare.goblin.Bill
 
-class BillListViewModel : ViewModel() {
+class HomeFragmentViewModel : ViewModel() {
 
     val bills = MutableLiveData<List<Bill>>()
 

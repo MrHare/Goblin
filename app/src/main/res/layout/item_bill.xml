@@ -3,14 +3,20 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="viewModel"
-                  type="com.example.hare.goblin.viewmodels.BillViewModel"/>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+
+        <variable
+            name="viewModel"
+            type="com.example.hare.goblin.viewmodels.BillViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:paddingHorizontal="@dimen/padding_16dp"
-        android:layout_height="@dimen/bill_item_height">
+        android:layout_height="@dimen/bill_item_height"
+        android:onClick="@{()-> viewModel.onItemClick()}">
 
         <ImageView
             android:id="@+id/type_icon"

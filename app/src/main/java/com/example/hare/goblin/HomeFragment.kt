@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import com.example.hare.goblin.databinding.FragmentHomeBinding
-import com.example.hare.goblin.viewmodels.BillListViewModel
+import com.example.hare.goblin.viewmodels.HomeFragmentViewModel
 
 class HomeFragment : Fragment() {
 
@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
         adapter = BillAdapter()
         binding.recyclerView.adapter = adapter
 
-        val viewModel = ViewModelProviders.of(this).get(BillListViewModel::class.java)
+        val viewModel = ViewModelProviders.of(this).get(HomeFragmentViewModel::class.java)
 
         viewModel.bills.observe(viewLifecycleOwner, Observer { bills ->
             adapter.submitList(bills)
